@@ -1,5 +1,5 @@
-// A palindromic number reads the same both ways.  The largest palindrome made from the product of two 2-digit
-// numbers is 9009 = 91 x 99.
+// A palindromic number reads the same both ways.  The largest palindrome
+// made from the product of two 2-digit numbers is 9009 = 91 x 99.
 //
 // Find the largest palindrome made from the product of two 3-digit numbers.
 
@@ -46,13 +46,14 @@ int palindromic(int num) {
 	int count = ((int) log10((double) num)) + 1;
 	
 	// allocate a memory bank for the digits of the number
-	int *digits = (int *) malloc (count * sizeof(int)), index = count - 1, next;
+	int *digits = (int *) malloc (count * sizeof(int)),
+	  index = count - 1, next;
 	while (num != 0) {
 		// grab the last digit in the number
 		next = num % 10;
 		// store it in the memory array
 		digits[index] = next;
-		// iterate the index iterator and recalculate the number to work with
+		// iterate the index iterator, recalculate 
 		index -= 1; num /= 10;
 	}
 
