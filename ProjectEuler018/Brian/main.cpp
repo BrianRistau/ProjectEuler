@@ -98,4 +98,7 @@ void readTriangle(const char *name, int **triangle) {
 
 	}
 
+	// close the file stream
+	fclose(fp);
+
 }
