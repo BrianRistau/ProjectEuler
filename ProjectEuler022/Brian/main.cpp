@@ -41,7 +41,6 @@ int main(int argc, char **argv) {
 	for (int i = 0; i < entries; i ++) {
 		// loop through each letter in the name
 		long unsigned wtotal = 0;
-		printf("processing name %s.\n", names[i]);
 		for (int j = 0; j < NAME_MAX; j ++) {
 			// check if the current character is null
 			if (names[i][j] == 0x00) break;
