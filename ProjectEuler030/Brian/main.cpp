@@ -26,7 +26,7 @@ int main(int argc, char **argv) {
 	// create an array to hold the digits of the number
 	int total = 0, count, *digits = (int *) malloc (DIGITS * sizeof(int));
 	// loop through all of the possible numbers
-	for (int i = 2; i < 1000000; i ++) {
+	for (int i = 2; i < 300000; i ++) {
 		// get the digits of the current number
 		count = getDigits(i, digits);
 		// get the power sum of the current number
